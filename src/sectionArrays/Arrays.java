@@ -30,7 +30,6 @@ public class Arrays {
         for(int i=0; i< array.length; i++) {
             sum += array[i];
         }
-
         return (double) sum / (double)array.length;
     }
 }
