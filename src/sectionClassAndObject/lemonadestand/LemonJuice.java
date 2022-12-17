@@ -1,10 +1,10 @@
-package sectionClass.lemonadestand;
+package sectionClassAndObject.lemonadestand;
 
 public class LemonJuice {
 
     // These are our Fields
-    int amount;
-    String unit;
+    private int amount;
+    private String unit;
 
 
     // this is the default constructor for this class, which is an empty object: public LemonJuice() {}
