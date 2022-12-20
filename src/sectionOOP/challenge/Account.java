@@ -1,14 +1,17 @@
 package sectionOOP.challenge;
 
 public class Account {
-    private String number = "121212";
-    private double balance = 50.55;
-    private String name = "Sofia";
-    private String email = "sof@gmail.com";
-    private String phoneNumber = "6026863882";
+    private String number;
+    private double balance;
+    private String name;
+    private String email;
+    private String phoneNumber;
 
     // constructor
     public Account() {
+        // calling a constructor within a constructor using this()
+        this("57674", 2.50, "Default name", "Default email", "Default phone");
+
         System.out.println("Empty constructor called");
     }
 
@@ -21,6 +24,10 @@ public class Account {
         phoneNumber = phone;
     }
 
+    // constructor with 2 default params
+    public Account(String name, String email, String phoneNumber) {
+        this("9999", 100.55, name, email, phoneNumber);
+    }
 
     // deposit funds method
     public void depositFunds(double depositAmount) {
