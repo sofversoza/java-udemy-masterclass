@@ -15,6 +15,7 @@ public class LemonJuice {
         this.unit = unit;
     }
 
+
     // we used the keyword "this." before our variables because of variable shadowing
     // shadowing is having a parameter with the same name as our fields
     // if we hadn't added the keyword, it will take in the parameters not the fields we declared outside the constructor
